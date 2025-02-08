@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบออนไลน์</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container" class="quiz-container">
+        <h1>ทดสอบความรู้ด้านเทคโนโลยี</h1>
+        <p id="timer" class="timer">⏳ เวลาที่เหลือ: 60 วินาที</p>
+        <div id="question-text" class="question-text"></div>
+        <div id="choices" class="choices-container"></div>
+        <button id="next-btn" class="hidden">ข้อต่อไป</button>
+    </div>
+    
+    <div id="result-container" class="quiz-container hidden">
+        <h2>📊 ผลลัพธ์ของคุณ</h2>
+        <p id="final-score" class="final-score"></p>
+        <div id="answer-summary" class="answer-summary"></div>
+        <button id="restart-button" onclick="startQuiz()"> ลองอีกครั้ง</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
